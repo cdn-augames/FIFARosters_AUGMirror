@@ -1,0 +1,145 @@
+.card_mini {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #e5e5e5;
+  box-shadow: 1px 1px 3px #000;
+  width: auto;
+}
+.card_mini .card_top {
+  padding: 5px;
+  border-bottom: solid 2px #000;
+  background: #333;
+  color: #fff;
+  border-radius: 4px 4px 0 0;
+}
+.card_mini .card_top a {
+  color: #fff;
+}
+.card_mini .card_top.att {
+  border-bottom: solid 2px #2942be;
+}
+.card_mini .card_top.mid {
+  border-bottom: solid 2px #50a015;
+}
+.card_mini .card_top.def {
+  border-bottom: solid 2px #d9c11d;
+}
+.card_mini .card_top.gk {
+  border-bottom: solid 2px #cf7013;
+}
+.card_mini .card_mid > div {
+  float: left;
+}
+.card_mini .card_mid .overall-position.position {
+  width: 30px;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  position: relative;
+}
+.card_mini .ovr_wrap {
+  position: relative;
+  z-index: 2;
+}
+.card_mini .overallrating {
+  font-size: 20px;
+  text-align: center;
+  padding: 3px;
+  font-weight: 600;
+}
+.card_mini .playername {
+  color: #fff;
+  font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+.card_mini .playerimg {
+  text-align: center;
+  height: 48px;
+  width: 46px;
+  position: relative;
+}
+.card_mini .playerimg img {
+  width: 100%;
+}
+.card_mini .crests {
+  float: right !important;
+  padding: 0;
+}
+.card_mini .crests .clubimg img,
+.card_mini .crests .nationimg img {
+  width: 25px;
+  height: auto;
+}
+.card_mini .specialties {
+  width: auto;
+  float: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 5px 0;
+  background-color: #fff;
+  text-align: center;
+  height: 34px;
+  vertical-align: middle;
+  color: #000;
+  font-size: .8em;
+  line-height: 23px;
+}
+.card_mini .specialties td {
+  color: #000;
+}
+.card_mini .misc_info {
+  display: none;
+  background-color: #fff;
+  height: 34px;
+}
+.card_mini .misc_info td {
+  color: #000;
+  line-height: 1em;
+  font-weight: bold;
+  text-align: center;
+  border-right: solid 1px #eee;
+}
+.card_mini .misc_info td:last-child {
+  border-right: none;
+}
+.card_mini .misc_info .sm-label {
+  font-size: .7em;
+  font-weight: normal;
+  color: #999;
+  margin-top: 0;
+  display: block;
+}
+.card_mini .card_bot .fieldgroup {
+  padding: 0;
+  margin: 0;
+  color: #333;
+}
+.card_mini .card_bot .fieldgroup td {
+  color: #333;
+  text-shadow: none;
+}
+.card_mini .card_bot .fieldgroup td:nth-child(2) {
+  /*padding-right: 25px;*/
+}
+.card_mini .card_bot .fieldgroup tr:nth-child(2) {
+  /* background-color: #444; */
+}
+.card_mini .card_bot .fieldgroup table {
+  width: 100%;
+  border-collapse: collapse;
+  text-shadow: 1px 1px 1px black;
+  font-size: .9em;
+  font-weight: bold;
+}
+.card_mini .rating > span {
+  padding: 1px 4px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+}

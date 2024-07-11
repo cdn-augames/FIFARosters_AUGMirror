@@ -1,0 +1,74 @@
+.modal-body .card_style_choices {
+	display: flex;
+	flex-wrap: wrap;
+}
+.card_style_choices .card_container {
+	display: inline-block;
+	width: 73px;
+	text-align: center;
+	vertical-align: top;
+	margin: 0 3px 10px;
+}
+.card_style_choices .card_container > span {
+	display: block;
+	text-align: center;
+	font-size: 10px;
+	height: 30px;
+}
+.card_style_choices .playercard {
+	display: inline-block;
+	background-size: contain;
+	width: 50px !important;
+	height: 73px !important;
+	border: solid 3px transparent;
+}
+.card_style_choices .playercard:hover {
+	transform: scale(1.1);
+}
+
+.card_style_choices .active {
+	border: solid 3px #fed100;
+}
+.card_style_choices .playercard.default {
+	border-radius: 5px;
+	text-align: center;
+	vertical-align: top;
+	line-height: 69px;
+	font-size: .9em;
+}
+.card_style_choices .playercard.default:before {
+	content: "";
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-color: rgba(255, 255, 255, .85);
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+.card_style_choices .playercard .text {
+	display: none;
+}
+.card_style_choices .playercard.default .text {
+	display: inline;
+	position: relative;
+	z-index: 2;
+	color: #000;
+}
+
+.card_style_choices .fut16.futchamp,
+.card_style_choices .fut16.squad-builder,
+.card_style_choices .fut16.squad-builder-premium,
+.card_style_choices .fut16.ones_to_watch,
+.card_style_choices .fut16.movember,
+.card_style_choices .fut16.halloween,
+.card_style_choices .fut16.gotm,
+.card_style_choices .fut16.confederation-champions-motm,
+.card_style_choices .fut16.award-winner,
+.card_style_choices .fut16.stars-stripes,
+
+.card_style_choices .fut17.euro {
+	display: none;
+}
+	

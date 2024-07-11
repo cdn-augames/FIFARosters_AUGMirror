@@ -1,0 +1,1133 @@
+
+<!DOCTYPE html>
+ 
+<html>
+	
+<!-- Mirrored from www.fifarosters.com/nologintool.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 Jul 2024 14:53:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    			<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Thomas Rye" />
+		<meta name="copyright" content="FifaRosters 2014 &mdash; 2024" />
+		<meta name="robots" content="index, follow" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		
+		 
+		<title>
+			Single Player Analysis | FifaRosters		</title>
+		
+        <style>
+            html body{background-color:#eee}.navbar{border-radius:0!important;margin-bottom:0!important}.navbar-brand{font-weight:500}.navbar-header .navbar-brand>img{display:inline-block}.navbar-brand small{font-size:.8em}.navbar-fifarosters .navbar-toggle{border-color:#ccc;color:#fff}.navbar-nav .logout-btn{padding:6px 12px}.nav .site_search{padding:8px 0}@media screen and (min-width:768px){#nav-menu-main{display:flex!important;justify-content:space-between}#nav-menu-main:after,#nav-menu-main:before{content:none}#nav-menu-main .navbar-nav{display:flex}#nav-menu-main .navbar-nav>li{flex-shrink:0}.nav .site_search{max-width:350px;flex-shrink:1}.site_search_autocomplete{min-width:50%!important}}#primary-navigation.navbar-fifarosters{background:#222;border:none;border-bottom:solid 4px #FFD200;color:#FFD200}#primary-navigation.navbar-fifarosters .open a.dropdown-toggle{color:#ffd200;background-color:#000}#primary-navigation.navbar-fifarosters a{color:#FFD200}#primary-navigation.navbar-fifarosters a .fa,#primary-navigation.navbar-fifarosters a [class*=" icn-chem-"],#primary-navigation.navbar-fifarosters a [class^=icn-chem-]{font-size:20px}#primary-navigation.navbar-fifarosters li:not(.open) a:focus,#primary-navigation.navbar-fifarosters li:not(.open) a:hover{background-color:rgba(0,0,0,.1)}#primary-navigation.navbar-fifarosters a.active{border-bottom:solid 3px #000}#primary-navigation.navbar-fifarosters .dropdown-menu a{color:#333}#primary-navigation.navbar-fifarosters .dropdown-menu a:focus,#primary-navigation.navbar-fifarosters .dropdown-menu a:hover{color:#262626;background-color:#f5f5f5}section.container,section.container-fluid{border:solid 1px #ccc;background-color:#fff;border-radius:3px;padding:15px}section.container-fluid{margin:15px}.super-footer .container,footer .container{background-color:transparent;border:none}.alert-banner{position:relative;padding:10px}.side-banner{position:fixed;top:0;background-position:center top;background-size:cover;background-repeat:no-repeat}.side-banner.side-banner-left{left:0}.side-banner.side-banner-right{right:0}        </style>
+        
+		<link rel="preload" as="font" href="assets/fonts/CruyffSansCondensed-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" as="font" href="assets/fonts/CruyffSansCondensed-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" as="font" href="assets/fonts/CruyffSansCondensed-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" as="font" href="assets/fonts/CruyffSans-Light.woff2" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" as="font" href="assets/fonts/DINPro-CondLight.woff2" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" as="font" href="assets/fonts/DINPro-Cond.woff2" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" as="font" href="assets/fonts/DINPro-CondMedium.woff2" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" as="font" href="assets/fonts/DINPro-CondBold.woff2" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" as="font" href="assets/fonts/DINPro.woff2" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" as="font" href="assets/fonts/DINPro-Light.woff2" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" as="font" href="assets/fonts/DINPro-Medium.woff" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" as="font" href="assets/fonts/DINPro-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" as="font" href="bower_components/components-font-awesome/fonts/fontawesome-webfont.woff2" type="font/woff2" crossorigin="anonymous">
+		
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css"><link rel="stylesheet" type="text/css" href="css/style87a3.css?v=2023-06-20--12-52"><link rel="stylesheet" type="text/css" href="css/fut24d052.css?v=2023-06-11--22-55"><link rel="stylesheet" type="text/css" href="css/fifarostersd052.css?v=2023-06-11--22-55"><link rel="stylesheet" type="text/css" href="bower_components/components-font-awesome/css/font-awesome.min.css">        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+		<script defer src="js/jquery/jquery-ui/jquery-ui-extensions/jquery.ui.touch-punch.min.js"></script>
+		<script defer type="text/javascript" src="js/jquery.color-2.1.2.min.js"></script>
+		<script defer type="text/javascript" src="js/rgbcolor.js"></script>
+		<script defer src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script defer src="bower_components/chosen/chosen.jquery.min.js"></script>
+		
+		<link rel="stylesheet" href="bower_components/jquery-toast-plugin/dist/jquery.toast.min.css">
+		<script defer src="bower_components/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
+
+		<!--[if lt IE 9 ]>
+			<script defer src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<script defer src="js/html2canvas/0.5.0-beta4/html2canvas-fix554.js"></script>
+		<script src="js/fontfaceobserver/fontfaceobserver.min.js"></script>
+		<script defer src="js/jquery.tablesorter.js"></script>
+		<script defer src="js/scriptsd052.js?v=2023-06-11--22-55"></script>
+		<script defer src="js/ads.js"></script>
+		<script defer type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT, gaTrack: true, gaId: 'UA-66307301-1'}, 'google_translate_element');
+            }
+        </script>
+        <script defer type="text/javascript" src="../translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit"></script>
+		<script>
+    		window.constants = {
+    		    "PLAYER_AVATAR_URL_16": "https://fifa16.content.easports.com/fifa/fltOnlineAssets/B488919F-23B5-497F-9FC0-CACFB38863D0/2016/fut/items/images/mobile/portraits/",
+                "PLAYER_AVATAR_URL_17": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/CC8267B6-0817-4842-BB6A-A20F88B05418/2017/fut/items/images/mobile/portraits/",
+                "PLAYER_AVATAR_URL_18": "https://fifa18.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/mobile/portraits/",
+                "PLAYER_AVATAR_URL_18": "https://fifa18.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/mobile/portraits/",
+            	"PLAYER_AVATAR_URL": "https://www.fifarosters.com/assets/players/fifa24/faces/",
+            	"PLAYER_AVATAR_URL_SPECIAL_16": "https://fifa16.content.easports.com/fifa/fltOnlineAssets/B488919F-23B5-497F-9FC0-CACFB38863D0/2016/fut/playerheads/html5/single/120x120/p",
+            	"PLAYER_AVATAR_URL_SPECIAL_XL_16": "https://fifa16.content.easports.com/fifa/fltOnlineAssets/B488919F-23B5-497F-9FC0-CACFB38863D0/2016/fut/playerheads/html5/single/512x512/p",
+            	"PLAYER_AVATAR_URL_SPECIAL_17": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/CC8267B6-0817-4842-BB6A-A20F88B05418/2017/fut/playerheads/html5/single/120x120/p",
+            	"PLAYER_AVATAR_URL_SPECIAL_XL_17": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/CC8267B6-0817-4842-BB6A-A20F88B05418/2017/fut/playerheads/html5/single/512x512/p",
+            	"PLAYER_AVATAR_URL_SPECIAL_18": "https://fifa18.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/playerheads/html5/single/120x120/p",
+            	"PLAYER_AVATAR_URL_SPECIAL_XL_18": "https://fifa18.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/playerheads/html5/single/512x512/p",
+            	"PLAYER_AVATAR_URL_SPECIAL_19": "https://fifa19.content.easports.com/fifa/fltOnlineAssets/7D49A6B1-760B-4491-B10C-167FBC81D58A/2019/fut/playerheads/html5/single/120x120/p",
+            	"PLAYER_AVATAR_URL_SPECIAL_XL_19": "https://www.easports.com/fifa/ultimate-team/web-app/content/7D49A6B1-760B-4491-B10C-167FBC81D58A/2019/fut/playerheads/mobile/single/p",
+            	"PLAYER_AVATAR_URL_SPECIAL": "https://www.easports.com/fifa/ultimate-team/web-app/content/20C1B296-B15C-4F72-AF0F-882F187EC2C9/2020/fut/playerheads/mobile/single/p",
+            	"PLAYER_AVATAR_URL_SPECIAL_XL": "https://www.easports.com/fifa/ultimate-team/web-app/content/20C1B296-B15C-4F72-AF0F-882F187EC2C9/2020/fut/playerheads/mobile/single/p",
+            	"CLASSIC_XI_AVATAR_URL": "http://cdn.content.easports.com/fifa/fltOnlineAssets/2013/fut/items/images/players/web/",
+            	"LOCAL_TEAM_CREST_URL": "https://www.fifarosters.com/assets/clubs/",
+            	"FEMALE_AVATAR_URL": "",
+            	"TEAM_CREST_URL": "https://www.fifarosters.com/assets/clubs/fifa24/",
+            	"TEAM_CREST_URL_16": "http://futhead.cursecdn.com/static/img/16/clubs/",
+            	"TEAM_CREST_URL_17": "https://www.fifarosters.com/assets/clubs/fifa17/",
+            	"TEAM_CREST_URL_18": "https://www.fifarosters.com/assets/clubs/fifa18/",
+                "TEAM_CREST_URL_19": "https://www.fifarosters.com/assets/clubs/fifa19/",
+                "TEAM_CREST_URL_20": "https://www.fifarosters.com/assets/clubs/fifa20/",
+                "TEAM_CREST_URL_21": "https://www.fifarosters.com/assets/clubs/fifa21/",
+                "TEAM_CREST_URL_22": "https://www.fifarosters.com/assets/clubs/fifa22/",
+                "NATION_FLAG_URL": "https://www.fifarosters.com/assets/nations/fifa17/",
+                "all_card_classes": "nonrare bronze silver gold rare if dark-card tots green legend motm hero toty bluered imotm concept pink futties_winner pro-player euro futchamp confederation-champions-motm squad-builder squad-builder-premium black-gold ones_to_watch movember halloween gotm award-winner fut_birthday rating_refresh marquee ptgs rtrc rtrs rtrw fut_united fut_championship fut_mas championship fof world_cup world_cup_icon sbc_flashback ucl ucl_motm ucl_live ucl_sbc ucl_tott europa_league europa_motm europa_sbc europa_live europa_tott potm_bundesliga potm_pl mls_potm fut_swap fut_swap_1 fut_swap_2 fut_swap_3 fut_swap_4 fut_swap_5 fut_swap_6 fut_swap_7 fut_swap_8 fut_swap_9 fut_swap_10 fut_swap_11 fut_swap_rewards toty_nominees fut_future_stars fut_future_stars_nominees headliners prime_icon_moments carniball tots_moments fut_future_stars_upgrade ucl_showdown ligue_1_potm winter_upgrade league_objective la_liga_potm player_moments objectives_reward icon_swaps_1 icon_swaps_2 icon_swaps_3 headliners_upgrade shapeshifters libertadores libertadores_gold libertadores_motm sudamericana totw_moments totw_moments_silver summer_heat_nominees summer_heat summer_showdown summer_showdown_boost objectives_reward_2 libertadores_tott libertadores_flashback sudamericana_motm sudamericana_tott dual_entitlement fgs_swaps_1 fgs_swaps_2 beckham kit_promo stadium_assets fut_showdown_boost fut_showdown whatif whatif_2 fof_2 concept_special futties_premium ucl_rttf europa_rttf europa_conference_league europa_conference_league_2 europa_conference_league_3 europa_conference_league_motm fut_future_stars_token shapeshifters_heroes libertadores_totgs fut_birthday_token tots_token tots_token_2 fut_heroes aged_stone infinite_mirror_1 infinite_mirror_2 powered_by_football adidas signature_signings potm_serie_a potm_eredivisie fut_versus_ice fut_versus_fire next_generation winter_wildcard winter_wildcard_token silver_special fut_fantasy_blue fut_fantasy_red fut_captains fut_captains_upgrade summer_swaps_token_1 summer_swaps_token_2 concept_rare cover_star_icons futties_heroes sbc_icon toty_icons dynamic_duo icon_swaps_4 out_of_position shapeshifters_icons premium_shapeshifters libertadores_squad_foundations fut_birthday_icons tots_nominees tots_champions teal_assets orange_assets fut_fantasy_heroes wc_player wc_icon wc_path_to_glory wc_star wc_swap_token wc_fut_heroes wc_tott wc_road_to_wc wc_stories wc_phenoms wc_showdown wc_showdown_boost fut_centurions history_makers fut_ballers trophy_titans trophy_titan_icons level_up premium_level_up ucl_totgs ucl_heroes uwcl_heroes uwcl_motm uwcl_rttk uwcl_rttf europa_totgs europa_conference_league_totgs triple_threat triple_threat_heroes fut_future_stars_evolutions fut_future_stars_evolutions_premium fut_future_stars_evolutions_icons fut_birthday_evolutions fut_birthday_evolutions_premium tots_gold_plus tots_gold_live tots_moments_evolutions tots_champions_plus winter_evolutions winter_icons fut_centurions_2 fut_centurions_3 fut_centurions_icons evolutions_1 evolutions_2 evolutions_3 evolutions_premium founders_evolutions_1 founders_evolutions_premium nike_mad_ready pundit_picks fc_pro fc_pro_boost fc_pro_champions fc_pro_champions_icon thunderstruck thunderstruck_icon radioactive radioactive_evolutions euros euros_special ultimate_dynasties ultimate_dynasties_icons special_edition virtual_bundesliga golazo_heroes golazo_icons greats_of_the_game_icon greats_of_the_game_hero euro_path_to_glory copa_america_path_to_glory euro_make_your_mark euro_make_your_mark_plus copa_america_make_your_mark copa_america_make_your_mark_plus fut_vip euro_tott copa_america_tott euro_fof copa_america_fof",
+                "card_colors": {},
+                            };
+                            
+                    $(document).ready(function() {
+                            loadImages();
+                            setupAutocompletes();
+                                                });
+		</script>
+			<link rel="stylesheet" href="css/pitch.css">
+	<link rel="stylesheet" href="css/player_profile.css">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HXEZN29LQL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HXEZN29LQL');
+</script>							<script src="../hb.vntsm.com/v3/live/ad-manager.min.js" type="text/javascript" data-site-id="5c5ac57146e0fb0001acdeb4" data-mode="scan" async></script>
+						
+									<script>console.log("Ads served by venatus");</script>
+		
+        <script defer src="js/autocomplete-fut-players6674.js?v=2022-03-25"></script>
+	</head>
+ 
+	<body class="" lang="en-US">
+						
+		<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginlabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="loginlabel"><span class="glyphicon glyphicon-log-in"></span> Log In</h4>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-xs-12 col-sm-7">
+    							<form id="frmLogin">
+	<input type="hidden" name="returnpage" value="https://www.fifarosters.com/nologintool.php">
+    <div class="statusMessage"></div>
+	<div class="form-group">
+		<a href="recoveruser.html" class="pull-right">Forgot Username?</a>
+		<label for="username">Username</label>
+		<input type="text" class="form-control" id="username" name="username" placeholder="Username">
+	</div>
+	<div class="form-group">
+		<a href="recoverpassword.html" class="pull-right">Forgot Password?</a>
+		<label for="password">Password</label>
+		<input type="password" class="form-control" id="password" name="password" placeholder="Password">
+	</div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" class="form-check-input" id="chkKeepMeLoggedIn" name="chkKeepMeLoggedIn" value="Yes"> Keep Me Logged In
+        </label>
+    </div>
+    <input type="submit" value="Log In" class="btn btn-block btn-primary">
+</form>
+							</div>
+							<div class="col-xs-12 col-sm-5">
+								<p>
+									<a href="https://www.facebook.com/dialog/oauth?client_id=114853159394&amp;redirect_uri=https%3A%2F%2Fwww.fifarosters.com%2Fconnect%2Flogin-facebook.php%3Furl%3Dhttps%3A%2F%2Fwww.fifarosters.com%2Fnologintool.php&amp;state=7c88bec2508f247643a2b9dfab1d9e32&amp;scope=email" class="btn btn-block btn-facebook loginfacebook"><span class="icon-facebook" style="margin-right: 7px;"></span> Log in with Facebook</a>
+								</p>
+								<p>
+									<a href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;access_type=online&amp;client_id=88065713280-6msrou68fvtla9rge162eddr8oph30eq.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Fwww.fifarosters.com%2Fconnect%2Flogin-google.php&amp;state&amp;scope=email%20profile&amp;approval_prompt=auto" class="btn btn-block btn-google logingoogle"><span class="icon-google" style="margin-right: 7px;"></span> Log in with Google</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+    					<div class="text-center">
+    						Need an account? <a href="newuser.html" class="btn btn-link" id="trsignup_btn">Sign up now!</a>
+    					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<header id="primary-header">
+			<nav id="primary-navigation" class="navbar navbar-fifarosters" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="nav-icon navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu-main" aria-label="Menu">
+							<span class="icn-chem-hamburger"></span>
+						</button>
+						<a class="navbar-brand logo-text" href="index.html"><span class="icn-chem-fifarosters" style="margin-right: 16px; font-size: 17px;"></span>FifaRosters</a>
+						<button type="button" id="nav-search-button" class="nav-icon btn btn-link" data-toggle="modal" data-target="#nav-search" aria-label="Search">
+							<span class="icn-chem-magnifier"></span>
+						</button>
+					</div>
+					
+					<div class="collapse navbar-collapse" id="nav-menu-main">
+						<ul class="nav navbar-nav">
+														<li id="tools-tab">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tools <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="create-card.html">Card Creator</a>
+									</li>
+									<li>
+										<a href="card-designer-gallery.html">Card Designer</a>
+									</li>
+    								<li>
+    								    <a href="totw-vote.html">TOTW Vote</a>
+    								</li>
+    								<li>
+    								    <a href="toty-vote.html">TOTY Vote</a>
+    								</li>
+									<li>
+										<a href="card-ranking.html">Card Rankings</a>
+									</li>
+									<li>
+										<a href="team-card-matchup.html">Team Card Matchup</a>
+									</li>
+									<li>
+										<a href="searchplayers.html">Search for a Player</a>
+									</li>
+									<li>
+										<a href="searchteams.html">Search for a Team</a>
+									</li>
+									<li>
+										<a href="out-of-position-list.html">Out of Position Player Search</a>
+									</li>
+								</ul>
+							</li>
+							<li id="lists-tab">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lists <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="toty.html">Team of the Year</a>
+									</li>
+									<li>
+										<a href="futmas.html">Futmas/Freeze</a>
+									</li>
+									<li>
+										<a href="power-players.html">Power Players</a>
+									</li>
+    								<li>
+    								    <a href="rttf.html">Road to the Final</a>
+    								</li>
+									<li>
+										<a href="carniball.html">Carniball</a>
+									</li>
+									<li>
+										<a href="prime-icon-moments.html">Prime Icon Moments</a>
+									</li>
+									<li>
+										<a href="fut-future-stars.html">FUT Future Stars</a>
+									</li>
+									<li>
+										<a href="legends.html">Legends / Icons</a>
+									</li>
+									<li>
+										<a href="festival-of-futball8fa7.html?v=18">Festival of FUTball</a>
+									</li>
+									<li>
+										<a href="ptg-selected8fa7.html?v=18">Path to Glory Selected</a>
+									</li>
+									<li>
+										<a href="tots.html">Team of the Season</a>
+									</li>
+        							<li>
+        								<a href="fut-birthday.html">FUT Birthday</a>
+        							</li>
+									<li>
+										<a href="tott.html">Team of the Tournaments</a>
+									</li>
+									<li>
+										<a href="movember1c07.html?v=17">Movember</a>
+									</li>
+									<li>
+										<a href="onestowatch.html">Ones to Watch</a>
+									</li>
+									<li>
+										<a href="futties.html">FUTTIES</a>
+									</li>
+									<li>
+										<a href="imotm1c07.html?v=17">Int'l Man of the Match</a>
+									</li>
+									<li>
+										<a href="totw.html">Team of the Week</a>
+									</li>
+									<li>
+										<a href="special-cards.html">Special Cards</a>
+									</li>
+									<li>
+										<a href="playerslist.html">Players List</a>
+									</li>
+									<li>
+										<a href="men-of-midas.html">Men of Midas</a>
+									</li>
+									<li>
+										<a href="fut-stats.html">FUT Card Distribution</a>
+									</li>
+									<li>
+										<a href="knights-of-nainggolan.html">Gullit Gang</a>
+									</li>
+									<li>
+										<a href="knights-of-nainggolan.html">Knights of Nainggolan</a>
+									</li>
+									<li>
+										<a href="silver-stars.html">Silver Stars</a>
+									</li>
+									<li>
+										<a href="career-mode-gems.html">Career Mode Gems</a>
+									</li>
+        							<li>
+        								<a href="world-cup.html">FIFA 18 World Cup</a>
+        							</li>
+								</ul>
+							</li>
+							<li id="games-tab">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Games <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="pack.html">Open a Pack</a>
+									</li>
+									<li>
+										<a href="player-pick.html">Open a Player Pick</a>
+									</li>
+									<li>
+										<a href="fut-spins.html">FUT Spins</a>
+									</li>
+									<li>
+										<a href="fut-memory.html">FUT Memory</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="site_search" id="nav-search-desktop">
+        						<button type="button" class="nav-icon btn btn-link" data-toggle="modal" data-target="#nav-search" aria-label="Search">
+        							<span class="icn-chem-magnifier"></span>
+        						</button>
+							</li>
+							    							<li id="account-tab" class="padding-sm">
+									<button id="login_btn" data-toggle="modal" data-target="#login" class="btn btn-warning btn-fr btn-sm">
+    									Login
+    								</button>
+    							</li>
+													</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+        <div class="modal fade search-modal" tabindex="-1" role="dialog" id="nav-search">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Player Search</h4>
+                    </div>
+                    <div class="modal-body">
+    				    <div class="input-group">
+    					    <span id="site_search_icon" class="search-input-icon icn-chem-magnifier"></span>
+    					    <input type="search" id="site_search" player-search-logsource="site_search" class="form-control search-input" value="" placeholder="Search for a player" no-blank="true" no-refresh="false" fut-year="24">
+    						<input type="hidden" class="hidden-response" value="">
+    						
+                            <div class="input-group-btn">
+                                <select class="form-control load_card_year" style="width: auto;">
+                                    <option value="16" >FIFA 16</option><option value="17" >FIFA 17</option><option value="18" >FIFA 18</option><option value="19" >FIFA 19</option><option value="20" >FIFA 20</option><option value="21" >FIFA 21</option><option value="22" >FIFA 22</option><option value="23" >FIFA 23</option><option value="24" selected="selected">FIFA 24</option>                                </select>
+                            </div>
+    				    </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+		
+		
+        
+        
+        
+											<!-- Venatus Rich Media - (with out-stream video) -->
+					<div class="vm-placement" data-id="5c6fc81446e0fb0001a61b3d"></div>
+					<!-- / Venatus Rich Media -->
+						<div class="ad-header-leaderboard">
+					<div class="hidden-xs">
+						<!-- FifaRosters-LeaderboardATF (5c5ac61c46e0fb00018c05af) - 728x90, 320x100, 728x250, 468x60 - Place in <BODY> of page where ad should appear -->
+						<div class="vm-placement" data-id="5c5ac61c46e0fb00018c05af" data-display-type="hybrid-banner"></div>
+						<!-- / FifaRosters-LeaderboardATF (5c5ac61c46e0fb00018c05af) -->
+					</div>
+
+					<div class="visible-xs">
+						<!-- FifaRosters-MobileLeaderboardATF (5c5ac65546e0fb00012643c6) - 300x250, 336x280, 300x100, 300x50, 320x100, 320x50 - Place in <BODY> of page where ad should appear -->
+						<div class="vm-placement" data-id="5c5ac65546e0fb00012643c6"></div>
+						<!-- / FifaRosters-MobileLeaderboardATF (5c5ac65546e0fb00012643c6) -->
+					</div>
+				</div>
+		
+			
+	<div id="content-wrapper">
+		<section id="content" class="container nologin_page">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="row">
+													<div class="col-xs-12">
+								<h1>
+									Create a player
+									<div class="pull-right" style="font-size: 16px; padding: 10px 0;">
+										<img src="images/tiny-motm-card-example.png" alt="tiny-motm-card-example" width="26" height="40" />
+										<a href="create-card.html" class="brn btn-link">Try out the new Create a Card tool!</a>
+									</div>
+								</h1>
+							</div>
+											</div>
+					
+												<form id="player-form" action="https://www.fifarosters.com/nologintool.php" method="post">
+								<input type="hidden" name="submitted" value="1">
+									<div class="well">
+		<div class="row">
+			<div class="col-xs-12">
+				<input type="submit" value="Submit Player" class="btn btn-success">
+							</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-sm-offset-3">
+				<label for="autocomplete-player">Search for a player</label> (fills in data for you)
+				<input id="autocomplete-player" type="text" class="form-control" placeholder="Type player name">
+				<img src="images/loader.gif" class="spinner" style="display: none;">
+				<input type="hidden" id="hidden_player_id">
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<input type="hidden" name="player[0][id]" value="">
+				<input type="hidden" name="player[0][modified]" value="2024-07-11 8:24:36">
+				<input type="hidden" id="modifier" name="player[0][modifier]" value="">
+				<input type="hidden" id="playerid" name="player[0][playerid]" value="">
+				<div class="row">
+					
+										<div class="form-group col-xs-12">
+						<label class="control-label">Card Color:</label>
+						<div class="card-color-widget">
+													<select id="form-card-color" class="form-control" name="player[0][color]" >
+								<option value="">Default</option>
+								<option value="bronze" >Non Rare Bronze</option><option value="silver" >Non Rare Silver</option><option value="gold" >Non Rare Gold</option><option value="rare_bronze" >Rare Bronze</option><option value="rare_silver" >Rare Silver</option><option value="rare_gold" >Rare Gold</option><option value="totw_bronze" >Team of the Week Bronze</option><option value="totw_silver" >Team of the Week Silver</option><option value="totw_gold" >Team of the Week Gold</option><option value="fut_champions_bronze" >FUT Champions Bronze</option><option value="fut_champions_silver" >FUT Champions Silver</option><option value="fut_champions_gold" >FUT Champions Gold</option><option value="ones_to_watch" >Ones to Watch</option><option value="halloween" >Trailblazers</option><option value="legend" >Icon / Legend</option><option value="teal" >Pro Player</option><option value="motm" >Man of the Match</option><option value="record_breaker" >Record Breaker</option><option value="sbc_flashback" >Flashback SBC</option><option value="sbc_premium" >End of an Era</option><option value="ucl_motm" >Champions League POTM</option><option value="ucl_live" >Champions League RTTK</option><option value="ucl_totgs" >UCL TOTGS</option><option value="ucl_rttf" >Champions League RTTF</option><option value="ucl_heroes" >UCL Heroes</option><option value="uwcl_heroes" >UCL Womens Heroes</option><option value="uwcl_motm" >UCL WOTM</option><option value="uwcl_rttk" >UWCL RTTK</option><option value="uwcl_rttf" >UWCL RTTF</option><option value="player_moments" >Player Moments</option><option value="europa_motm" >Europa League POTM</option><option value="europa_live" >Europa League RTTK</option><option value="europa_rttf" >Europa League RTTF</option><option value="europa_totgs" >Europa TOTGS</option><option value="europa_conference_league" >Europa Conference League</option><option value="europa_conference_league_3" >Europa Conference League RTTF</option><option value="europa_conference_league_totgs" >Europa Conference League TOTGS</option><option value="triple_threat" >Triple Threat</option><option value="triple_threat_heroes" >Triple Threat Heroes</option><option value="toty" >Team of the Year</option><option value="toty_nominees" >TOTY Honorable Mention</option><option value="toty_icons" >TOTY Icons</option><option value="fut_future_stars" >Future Stars</option><option value="fut_future_stars_evolutions" >Future Stars Evolutions</option><option value="fut_future_stars_evolutions_premium" >Future Stars Evolutions Premium</option><option value="fut_future_stars_evolutions_icons" >Future Stars Icons</option><option value="potm_bundesliga" >Bundesliga POTM</option><option value="potm_pl" >Premier League POTM</option><option value="ligue_1_potm" >Ligue 1 POTM</option><option value="la_liga_potm" >La Liga POTM</option><option value="potm_serie_a" >POTM Serie A</option><option value="potm_eredivisie" >POTM Eredivisie</option><option value="objectives_reward" >Objectives Reward</option><option value="objectives_reward_2" >Squad Foundations</option><option value="dynamic_duo" >Dynamic Duo</option><option value="libertadores" >Libertadores</option><option value="libertadores_motm" >Libertadores MOTM</option><option value="sudamericana" >Sudamericana</option><option value="sudamericana_motm" >Sudamericana MOTM</option><option value="fut_birthday" >FUT Birthday</option><option value="fut_birthday_icons" >FUT Birthday Icons</option><option value="fut_birthday_evolutions" >FUT Birthday Evolutions</option><option value="fut_birthday_evolutions_premium" >FUT Birthday Evolutions Premium</option><option value="tots_gold" >Team of the Season Gold</option><option value="tots_gold_plus" >TOTS Plus</option><option value="tots_gold_live" >TOTS Live</option><option value="tots_moments" >Team of the Season Moments</option><option value="tots_moments_evolutions" >TOTS Moments Evolutions</option><option value="tots_champions" >TOTS Champions</option><option value="tots_champions_plus" >TOTS Champions Plus</option><option value="fut_showdown_boost" >FUT Showdown Boost</option><option value="fut_showdown" >FUT Showdown</option><option value="fut_heroes" >FUT Heroes</option><option value="aged_stone" >Vintage</option><option value="fut_versus_ice" >FUT Versus Ice</option><option value="fut_versus_fire" >FUT Versus Fire</option><option value="winter_wildcard" >Winter Wildcard</option><option value="winter_evolutions" >Winter Evolutions</option><option value="winter_icons" >Winter Icons</option><option value="fut_fantasy_blue" >FUT Fantasy</option><option value="fut_fantasy_heroes" >FUT Fantasy Heroes</option><option value="fut_centurions" >FUT Centurions</option><option value="fut_centurions_2" >FUT Centurions II</option><option value="fut_centurions_3" >FUT Centurions III</option><option value="fut_centurions_icons" >Centurion Icons</option><option value="evolutions_1" >Evolutions I</option><option value="evolutions_2" >Evolutions II</option><option value="evolutions_3" >Evolutions III</option><option value="evolutions_premium" >Evolutions IV</option><option value="founders_evolutions_1" >Founders Evolutions I</option><option value="founders_evolutions_premium" >Founders Evolutions II</option><option value="nike_mad_ready" >Nike Mad Ready</option><option value="pundit_picks" >Pundit Picks</option><option value="fc_pro" >FC Pro</option><option value="fc_pro_boost" >FC Pro Boost</option><option value="fc_pro_champions" >FC Pro Champions</option><option value="fc_pro_champions_icon" >FC Pro Champions Icon</option><option value="thunderstruck" >Thunderstruck</option><option value="thunderstruck_icon" >Thunderstruck Icons</option><option value="radioactive" >Radioactive</option><option value="radioactive_evolutions" >Radioactive Evolutions</option><option value="euros" >Euros</option><option value="euros_special" >Euros Special</option><option value="ultimate_dynasties" >Ultimate Dynasties</option><option value="ultimate_dynasties_icons" >Ultimate Dynasties Icons</option><option value="special_edition" >Special Edition</option><option value="virtual_bundesliga" >Virtual Bundesliga</option><option value="golazo_heroes" >Golazo Heroes</option><option value="golazo_icons" >Golazo Icons</option><option value="greats_of_the_game_icon" >Greats of the Game Icon</option><option value="greats_of_the_game_hero" >Greats of the Game Hero</option><option value="euro_path_to_glory" >Euro Path to Glory</option><option value="copa_america_path_to_glory" >Copa America Path to Glory</option><option value="euro_make_your_mark" >Euro Make Your Mark</option><option value="euro_make_your_mark_plus" >Euro Make Your Mark Plus</option><option value="copa_america_make_your_mark" >Copa America Make Your Mark</option><option value="copa_america_make_your_mark_plus" >Copa America Make Your Mark Plus</option><option value="fut_vip" >FUT VIP</option><option value="euro_tott" >Euro Team of the Tournament</option><option value="copa_america_tott" >Copa America Team of the Tournament</option><option value="euro_fof" >Euro Festival of Football</option><option value="copa_america_fof" >Copa America Festival of Football</option>							</select>
+						</div>
+					</div>
+										<div class="form-group col-xs-12">
+						<label for="player_name">Name</label>
+						<input id="player_name" name="player[0][player_name]" type="text" class="form-control" placeholder="Player Name" value="">
+					</div>
+					
+					<div class="form-group col-xs-12">
+						<label>Player Image</label>
+						<div class="form-group">
+							<label for="form-card-image-choice-default" class="radio-inline">
+								<input type="radio" name="player[0][cardimagechoice]" id="form-card-image-choice-default" value="default" checked="checked"> Default</label>
+							<label for="form-card-image-choice-search" class="radio-inline">
+								<input type="radio" name="player[0][cardimagechoice]" id="form-card-image-choice-search"  value="search" > Search by name</label>
+							<label for="form-card-image-choice-url" class="radio-inline">
+								<input type="radio" name="player[0][cardimagechoice]" id="form-card-image-choice-url" value="url" > Enter url</label>
+						</div>
+						<input type="text" class="fut-images-typeahead form-control" id="form-card-image-text" name="player[0][playerimgname]" placeholder="Search player names to change image" value="" no-refresh="true" search-type="image">
+						<img src="images/loader.gif" class="spinner" style="display: none;">
+						<input type="hidden" class="hidden-response" id="form-card-image" name="player[0][specialimgurl]" value="">
+						<div class="form-group">
+    						<label for="form-card-image-is-dynamic" class="checkbox-inline">
+								<input type="checkbox" name="player[0][isdynamicportrait]" id="form-card-image-is-dynamic" value="1" > Dynamic Image</label> (fills card size)
+						</div>
+					</div>
+					
+										
+					<div class="form-group col-xs-6 col-sm-4">
+						<label>Overall</label>
+						<input id="overallrating" name="player[0][overallrating]" type="text" class="form-control" placeholder="OVR" maxlength="2" size="3" value="">
+					</div>
+					<div class="form-group col-xs-6 col-sm-4">
+						<label>Potential</label>
+						<input id="potential" name="player[0][potential]" type="text" class="form-control" placeholder="POT" maxlength="2" size="3" value="">
+					</div>
+					<div class="form-group col-xs-6 col-sm-4">
+						<label>Position</label>
+						<select id="position" name="player[0][position]" class="form-control">
+							<option value="-"></option>
+							<option value="GK" >GK</option><option value="RB" >RB</option><option value="CB" >CB</option><option value="LB" >LB</option><option value="RWB" >RWB</option><option value="LWB" >LWB</option><option value="CDM" >CDM</option><option value="RM" >RM</option><option value="CM" >CM</option><option value="LM" >LM</option><option value="CAM" >CAM</option><option value="RW" >RW</option><option value="LW" >LW</option><option value="RF" >RF</option><option value="CF" >CF</option><option value="LF" >LF</option><option value="ST" >ST</option>						</select>
+					</div>
+					<div class="form-group col-xs-6 col-sm-4">
+						<label>Age</label>
+						<input type="text" id="age" name="player[0][age]" class="form-control" maxlength="2" value="">
+					</div>
+					<div class="form-group col-xs-6 col-sm-4">
+						<label>Ht <small class="uscustom">(ft)</small><small class="metric">(cm)</small></label> <a href="#" class="fa fa-info-circle uscustom" data-toggle="tooltip" data-placement="top" title="Enter properly formatted height between 4'0&quot; and 7'11&quot;" id="heightmarker"></a>
+						<input type="text" id="usheight" name="player[0][usheight]" class="form-control uscustom" maxlength="5" value="0&#039;0&quot;" placeholder="5'11&quot;">
+						<input type="text" id="height" name="player[0][height]" class="form-control metric" maxlength="5" value="" placeholder="180">
+					</div>
+					<div class="form-group col-xs-6 col-sm-4">
+						<label>Wt <small class="uscustom">(lbs)</small><small class="metric">(kg)</small></label>
+						<input type="text" id="usweight" name="player[0][usweight]" class="form-control uscustom" maxlength="3" value="0">
+						<input type="text" id="weight" name="player[0][weight]" class="form-control metric" maxlength="3" value="">
+					</div>
+					
+											<div class="form-group col-xs-12 col-md-6">
+							<label>Measurements</label>
+							<div class="btn-group" data-toggle="buttons">
+								<label class="btn btn-default active" for="measurement_us">
+									<input type="radio" name="player[0][measurements]" id="measurement_us" value="1" checked="checked"> US
+								</label>
+								<label class="btn btn-default" for="measurement_metric">
+									<input type="radio" name="player[0][measurements]" id="measurement_metric" value="2"> Metric
+								</label>
+							</div>
+						</div>
+										
+					
+					<div class="form-group col-xs-12 col-md-6">
+						<label>Nationality</label>
+						<select id="nationality" name="player[0][nationality]" class="form-control">
+							<option value="">- Choose Country -</option>
+							<option value="149">Afghanistan</option><option value="1">Albania</option><option value="97">Algeria</option><option value="194">American Samoa</option><option value="2">Andorra</option><option value="98">Angola</option><option value="62">Anguilla</option><option value="63">Antigua and Barbuda</option><option value="52">Argentina</option><option value="3">Armenia</option><option value="64">Aruba</option><option value="195">Australia</option><option value="4">Austria</option><option value="5">Azerbaijan</option><option value="65">Bahamas</option><option value="150">Bahrain</option><option value="151">Bangladesh</option><option value="66">Barbados</option><option value="6">Belarus</option><option value="7">Belgium</option><option value="67">Belize</option><option value="99">Benin</option><option value="68">Bermuda</option><option value="152">Bhutan</option><option value="53">Bolivia</option><option value="8">Bosnia and Herzegovina</option><option value="100">Botswana</option><option value="54">Brazil</option><option value="69">British Virgin Islands</option><option value="153">Brunei Darussalam</option><option value="9">Bulgaria</option><option value="101">Burkina Faso</option><option value="102">Burundi</option><option value="154">Cambodia</option><option value="103">Cameroon</option><option value="70">Canada</option><option value="104">Cape Verde Islands</option><option value="71">Cayman Islands</option><option value="105">Central African Republic</option><option value="106">Chad</option><option value="55">Chile</option><option value="155">China PR</option><option value="213">Chinese Taipei</option><option value="56">Colombia</option><option value="214">Comoros</option><option value="107">Congo</option><option value="110">Congo DR</option><option value="196">Cook Islands</option><option value="72">Costa Rica</option><option value="108">Côte d'Ivoire</option><option value="209">Created Players Country</option><option value="216">Creation Zone</option><option value="10">Croatia</option><option value="73">Cuba</option><option value="85">Curaçao</option><option value="11">Cyprus</option><option value="12">Czech Republic</option><option value="13">Denmark</option><option value="109">Djibouti</option><option value="74">Dominica</option><option value="207">Dominican Republic</option><option value="57">Ecuador</option><option value="111">Egypt</option><option value="76">El Salvador</option><option value="14">England</option><option value="112">Equatorial Guinea</option><option value="113">Eritrea</option><option value="208">Estonia</option><option value="114">Ethiopia</option><option value="16">Faroe Islands</option><option value="197">Fiji</option><option value="17">Finland</option><option value="18">France</option><option value="210">Free Agents Country</option><option value="19">FYR Macedonia</option><option value="115">Gabon</option><option value="116">Gambia</option><option value="20">Georgia</option><option value="21">Germany</option><option value="117">Ghana</option><option value="205">Gibraltar</option><option value="22">Greece</option><option value="206">Greenland</option><option value="77">Grenada</option><option value="157">Guam</option><option value="78">Guatemala</option><option value="118">Guinea</option><option value="119">Guinea-Bissau</option><option value="79">Guyana</option><option value="80">Haiti</option><option value="34">Holland</option><option value="81">Honduras</option><option value="158">Hong Kong</option><option value="23">Hungary</option><option value="24">Iceland</option><option value="159">India</option><option value="160">Indonesia</option><option value="75">International</option><option value="222">International Women</option><option value="161">Iran</option><option value="162">Iraq</option><option value="26">Israel</option><option value="27">Italy</option><option value="82">Jamaica</option><option value="163">Japan</option><option value="164">Jordan</option><option value="165">Kazakhstan</option><option value="120">Kenya</option><option value="166">Korea DPR</option><option value="167">Korea Republic</option><option value="219">Kosovo</option><option value="168">Kuwait</option><option value="169">Kyrgyzstan</option><option value="170">Laos</option><option value="28">Latvia</option><option value="171">Lebanon</option><option value="121">Lesotho</option><option value="122">Liberia</option><option value="123">Libya</option><option value="29">Liechtenstein</option><option value="30">Lithuania</option><option value="31">Luxembourg</option><option value="172">Macau</option><option value="124">Madagascar</option><option value="125">Malawi</option><option value="173">Malaysia</option><option value="174">Maldives</option><option value="126">Mali</option><option value="32">Malta</option><option value="127">Mauritania</option><option value="128">Mauritius</option><option value="83">Mexico</option><option value="33">Moldova</option><option value="175">Mongolia</option><option value="15">Montenegro</option><option value="84">Montserrat</option><option value="129">Morocco</option><option value="130">Mozambique</option><option value="176">Myanmar</option><option value="131">Namibia</option><option value="177">Nepal</option><option value="215">New Caledonia</option><option value="198">New Zealand</option><option value="86">Nicaragua</option><option value="132">Niger</option><option value="133">Nigeria</option><option value="35">Northern Ireland</option><option value="36">Norway</option><option value="178">Oman</option><option value="179">Pakistan</option><option value="180">Palestine</option><option value="87">Panama</option><option value="199">Papua New Guinea</option><option value="58">Paraguay</option><option value="59">Peru</option><option value="181">Philippines</option><option value="37">Poland</option><option value="38">Portugal</option><option value="88">Puerto Rico</option><option value="182">Qatar</option><option value="25">Republic of Ireland</option><option value="211">Rest of World</option><option value="39">Romania</option><option value="40">Russia</option><option value="134">Rwanda</option><option value="200">Samoa</option><option value="41">San Marino</option><option value="135">São Tomé e Príncipe</option><option value="183">Saudi Arabia</option><option value="42">Scotland</option><option value="136">Senegal</option><option value="51">Serbia</option><option value="137">Seychelles</option><option value="138">Sierra Leone</option><option value="184">Singapore</option><option value="43">Slovakia</option><option value="44">Slovenia</option><option value="201">Solomon Islands</option><option value="139">Somalia</option><option value="140">South Africa</option><option value="218">South Sudan</option><option value="45">Spain</option><option value="185">Sri Lanka</option><option value="89">St. Kitts and Nevis</option><option value="90">St. Lucia</option><option value="91">St. Vincent and the Grenadines</option><option value="141">Sudan</option><option value="92">Suriname</option><option value="142">Swaziland</option><option value="46">Sweden</option><option value="47">Switzerland</option><option value="186">Syria</option><option value="202">Tahiti</option><option value="187">Tajikistan</option><option value="143">Tanzania</option><option value="188">Thailand</option><option value="212">Timor-Leste</option><option value="144">Togo</option><option value="203">Tonga</option><option value="93">Trinidad and Tobago</option><option value="145">Tunisia</option><option value="48">Turkey</option><option value="189">Turkmenistan</option><option value="94">Turks and Caicos Islands</option><option value="146">Uganda</option><option value="49">Ukraine</option><option value="190">United Arab Emirates</option><option value="95">United States</option><option value="60">Uruguay</option><option value="96">US Virgin Islands</option><option value="191">Uzbekistan</option><option value="204">Vanuatu</option><option value="61">Venezuela</option><option value="192">Vietnam</option><option value="50">Wales</option><option value="193">Yemen</option><option value="147">Zambia</option><option value="148">Zimbabwe</option>						</select>
+					</div>
+					<div class="form-group col-xs-6 col-md-3">
+						<label><span title="Attacking Workrate">Att W/R</span></label>
+						<select id="attackingworkrate" name="player[0][attackingworkrate]" class="form-control">
+							<option value="">- Choose Workrate -</option>
+																<option value="1" >Low</option>
+																<option value="0" selected="selected">Medium</option>
+																<option value="2" >High</option>
+													</select>
+					</div>
+					<div class="form-group col-xs-6 col-md-3">
+						<label><span title="Defensive Workrate">Def W/R</span></label>
+						<select id="defensiveworkrate" name="player[0][defensiveworkrate]" class="form-control">
+							<option value="">- Choose Workrate -</option>
+																<option value="1" >Low</option>
+																<option value="0" selected="selected">Medium</option>
+																<option value="2" >High</option>
+													</select>
+					</div>
+					<div class="form-group col-xs-6 col-md-3">
+						<label>W<span class="hidden-xs hidden-md">ea</span>k Foot</label>
+						<select class="form-control" id="weakfoot" name="player[0][weakfootabilitytypecode]">
+															<option value="1" >1 ✮</option>
+															<option value="2" >2 ✮</option>
+															<option value="3" >3 ✮</option>
+															<option value="4" >4 ✮</option>
+															<option value="5" >5 ✮</option>
+													</select>
+					</div>
+					<div class="form-group col-xs-6 col-md-3">
+						<label>Skills</label>
+						<select class="form-control" id="skillmoves" name="player[0][skillmoves]">
+															<option value="0" selected="selected">1 ✮</option>
+															<option value="1" >2 ✮</option>
+															<option value="2" >3 ✮</option>
+															<option value="3" >4 ✮</option>
+															<option value="4" >5 ✮</option>
+													</select>
+					</div>
+					<div class="form-group col-xs-6 col-md-3">
+						<label>Int'l Rep</label>
+						<select class="form-control" id="internationalrep" name="player[0][internationalrep]">
+															<option value="1" >1 ✮</option>
+															<option value="2" >2 ✮</option>
+															<option value="3" >3 ✮</option>
+															<option value="4" >4 ✮</option>
+															<option value="5" >5 ✮</option>
+													</select>
+					</div>
+					
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<div class="row">
+    				<div style="display: none;">Array
+(
+    [1] => Array
+        (
+            [label] => Physical
+            [stats] => Array
+                (
+                    [0] => acceleration
+                    [1] => agility
+                    [2] => balance
+                    [3] => jumping
+                    [4] => sprintspeed
+                    [5] => stamina
+                    [6] => strength
+                )
+
+        )
+
+    [2] => Array
+        (
+            [label] => Mental
+            [stats] => Array
+                (
+                    [0] => aggression
+                    [1] => positioning
+                    [2] => composure
+                    [3] => interceptions
+                    [4] => reactions
+                    [5] => vision
+                )
+
+        )
+
+    [3] => Array
+        (
+            [label] => Technical
+            [stats] => Array
+                (
+                    [0] => ballcontrol
+                    [1] => longshots
+                    [2] => crossing
+                    [3] => marking
+                    [4] => curve
+                    [5] => penalties
+                    [6] => dribbling
+                    [7] => shortpassing
+                    [8] => freekickaccuracy
+                    [9] => shotpower
+                    [10] => finishing
+                    [11] => slidingtackle
+                    [12] => headingaccuracy
+                    [13] => standingtackle
+                    [14] => longpassing
+                    [15] => volleys
+                )
+
+        )
+
+    [4] => Array
+        (
+            [label] => Goalkeeping
+            [stats] => Array
+                (
+                    [0] => gkdiving
+                    [1] => gkhandling
+                    [2] => gkkicking
+                    [3] => gkpositioning
+                    [4] => gkreflexes
+                )
+
+        )
+
+)
+</div>
+					                            <div class="col-xs-12">
+                                <h4>Physical</h4>
+                            </div>
+                    							<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">acceleration</label>
+									<input id="acceleration"  name="player[0][acceleration]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="acc" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">agility</label>
+									<input id="agility"  name="player[0][agility]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="agi" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">balance</label>
+									<input id="balance"  name="player[0][balance]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="bal" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">jumping</label>
+									<input id="jumping"  name="player[0][jumping]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="jmp" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">Sprint Speed</label>
+									<input id="sprintspeed"  name="player[0][sprintspeed]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="spd" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">stamina</label>
+									<input id="stamina"  name="player[0][stamina]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="sta" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">strength</label>
+									<input id="strength"  name="player[0][strength]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="str" size="3" value="0">
+								</div>
+							</div>
+					                            <div class="col-xs-12">
+                                <h4>Mental</h4>
+                            </div>
+                    							<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">aggression</label>
+									<input id="aggression"  name="player[0][aggression]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="agg" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">Attack Pos</label>
+									<input id="positioning"  name="player[0][positioning]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="pos" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">composure</label>
+									<input id="composure"  name="player[0][composure]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="cmp" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">interceptions</label>
+									<input id="interceptions"  name="player[0][interceptions]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="int" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">reactions</label>
+									<input id="reactions"  name="player[0][reactions]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="rct" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">vision</label>
+									<input id="vision"  name="player[0][vision]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="vis" size="3" value="0">
+								</div>
+							</div>
+					                            <div class="col-xs-12">
+                                <h4>Technical</h4>
+                            </div>
+                    							<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">Ball Control</label>
+									<input id="ballcontrol"  name="player[0][ballcontrol]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="ctl" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">Long Shots</label>
+									<input id="longshots"  name="player[0][longshots]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="lsh" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">crossing</label>
+									<input id="crossing"  name="player[0][crossing]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="cro" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">Def Awareness</label>
+									<input id="marking"  name="player[0][marking]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="mrk" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">curve</label>
+									<input id="curve"  name="player[0][curve]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="crv" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">penalties</label>
+									<input id="penalties"  name="player[0][penalties]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="pen" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">dribbling</label>
+									<input id="dribbling"  name="player[0][dribbling]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="drb" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">Short Passing</label>
+									<input id="shortpassing"  name="player[0][shortpassing]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="sps" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">FK Acc</label>
+									<input id="freekickaccuracy"  name="player[0][freekickaccuracy]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="fka" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">Shot Power</label>
+									<input id="shotpower"  name="player[0][shotpower]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="pow" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">finishing</label>
+									<input id="finishing"  name="player[0][finishing]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="fin" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">Slide Tackle</label>
+									<input id="slidingtackle"  name="player[0][slidingtackle]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="sld" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">Heading Acc</label>
+									<input id="headingaccuracy"  name="player[0][headingaccuracy]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="hea" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">Stand Tackle</label>
+									<input id="standingtackle"  name="player[0][standingtackle]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="std" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">Long Passing</label>
+									<input id="longpassing"  name="player[0][longpassing]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="lps" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">volleys</label>
+									<input id="volleys"  name="player[0][volleys]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="vol" size="3" value="0">
+								</div>
+							</div>
+					                            <div class="col-xs-12">
+                                <h4>Goalkeeping</h4>
+                            </div>
+                    							<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">GK Diving</label>
+									<input id="gkdiving"  name="player[0][gkdiving]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="gkd" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">GK Handling</label>
+									<input id="gkhandling"  name="player[0][gkhandling]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="gkh" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">GK Kicking</label>
+									<input id="gkkicking"  name="player[0][gkkicking]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="gkk" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">GK Positioning</label>
+									<input id="gkpositioning"  name="player[0][gkpositioning]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="gkp" size="3" value="0">
+								</div>
+							</div>
+												<div class="col-xs-6">
+								<div class="form-group">
+									<label style="text-transform: capitalize;">GK Reflexes</label>
+									<input id="gkreflexes"  name="player[0][gkreflexes]" type="text" maxlength="2" class="form-control" style="text-transform: uppercase;" placeholder="gkr" size="3" value="0">
+								</div>
+							</div>
+									</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-xs-6">
+				<input type="submit" value="Submit Player" class="btn btn-success">
+							</div>
+		</div>
+	</div>							</form>
+					
+									</div>
+			</div>
+					</section>
+	</div>
+		
+						<section class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<h2>Single Player Analysis Discussion</h2>
+							<div id="disqus_thread"></div>
+<script type="text/javascript">var disqus_shortname = 'fifarosters';(function() {var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);})();</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>						</div>
+					</div>
+				</section>
+		 
+				<div class="super-footer">
+			<section class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<h4>Fun Tools &amp; Games</h4>
+						<ul>
+							<li>
+							    <a href="totw-vote.html">TOTW Vote</a>
+							</li>
+							<li>
+							    <a href="toty-vote.html">TOTY Vote</a>
+							</li>
+							<li>
+								<a href="pack.html">Open a Pack</a>
+							</li>
+							<li>
+								<a href="player-pick.html">Open a Player Pick</a>
+							</li>
+							<li>
+								<a href="fut-spins.html">FUT Spins</a>
+							</li>
+							<li>
+                                <a href="fut-memory.html">FUT Memory</a>
+							</li>
+							<li>
+								<a href="create-card.html">Card Creator</a>
+							</li>
+							<li>
+								<a href="card-designer-gallery.html">Card Designer</a>
+							</li>
+							<li>
+								<a href="card-ranking.html">Card Rankings</a>
+							</li>
+							<li>
+								<a href="team-card-matchup.html">Team Card Matchup</a>
+							</li>
+							<li>
+								<a href="searchplayers.html">Search for a Player</a>
+							</li>
+							<li>
+								<a href="searchteams.html">Search for a Team</a>
+							</li>
+							<li>
+								<a href="out-of-position-list.html">Out of Position Player Search</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<h4>Lists</h4>
+						<ul style="columns: 2;">
+							<li>
+								<a href="power-players.html">Power Players</a>
+							</li>
+							<li>
+							    <a href="rttf.html">Road to the Final</a>
+							</li>
+							<li>
+								<a href="prime-icon-moments.html">Prime Icon Moments</a>
+							</li>
+    						<li>
+    						    <a href="fut-future-stars.html">FUT Future Stars</a>
+    						</li>
+							<li>
+								<a href="fut-birthday.html">FUT Birthday</a>
+							</li>
+							<li>
+								<a href="tott.html">TOTT</a>
+							</li>
+							<li>
+								<a href="movember.html">Movember</a>
+							</li>
+							<li>
+								<a href="ultimate-scream.html">Ultimate Scream</a>
+							</li>
+							<li>
+								<a href="onestowatch.html">Ones to Watch</a>
+							</li>
+							<li>
+								<a href="futties.html">FUTTIES</a>
+							</li>
+							<li>
+								<a href="imotm.html">Int'l Man of the Match</a>
+							</li>
+							<li>
+								<a href="tots.html">Team of the Season</a>
+							</li>
+							<li>
+								<a href="toty.html">Team of the Year</a>
+							</li>
+							<li>
+								<a href="totw.html">Team of the Week</a>
+							</li>
+							<li>
+								<a href="legends.html">Legends</a>
+							</li>
+							<li>
+								<a href="special-cards.html">Special Cards</a>
+							</li>
+							<li>
+								<a href="playerslist.html">Players List</a>
+							</li>
+							<li>
+								<a href="men-of-midas.html">Men of Midas</a>
+							</li>
+							<li>
+								<a href="fut-stats.html">FUT Card Distribution</a>
+							</li>
+							<li>
+								<a href="knights-of-nainggolan.html">Gullit Gang</a>
+							</li>
+							<li>
+								<a href="knights-of-nainggolan.html">Knights of Nainggolan</a>
+							</li>
+							<li>
+								<a href="silver-stars.html">Silver Stars</a>
+							</li>
+							<li>
+								<a href="career-mode-gems.html">Career Mode Gems</a>
+							</li>
+							<li>
+								<a href="world-cup.html">FIFA 18 World Cup</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<h4>Social</h4>
+						<ul>
+							<li>
+								<a href="http://twitter.com/fifarosters" class="contact-link">
+									<span class="contact-icon twitter">
+										<span class="fa fa-twitter"></span>
+									</span>
+									<span class="sr-only">FifaRosters Twitter</span>
+								</a>
+								<a href="http://facebook.com/fifarosters" class="contact-link">
+									<span class="contact-icon facebook">
+										<span class="fa fa-facebook"></span>
+									</span>
+									<span class="sr-only">FifaRosters Facebook Page</span>
+								</a>
+							</li>
+							<li>
+								<a href="http://youtube.com/fifarosters" class="contact-link">
+									<span class="contact-icon youtube">
+										<span class="fa fa-youtube"></span>
+									</span>
+									<span class="sr-only">FifaRosters Youtube Channel</span>
+								</a>
+								<a href="http://instagram.com/fifarosters" class="contact-link">
+									<span class="contact-icon instagram">
+										<span class="fa fa-instagram"></span>
+									</span>
+									<span class="sr-only">FifaRosters Instagram</span>
+								</a>
+							</li>
+							<li>
+								<a href="http://reddit.com/r/fifarosters" class="contact-link">
+									<span class="contact-icon reddit">
+										<span class="fa fa-reddit"></span>
+									</span>
+									<span class="sr-only">FifaRosters SubReddit</span>
+								</a>
+								<a href="https://discord.gg/XPE3B2u" target="_blank" class="contact-link">
+									<span class="contact-icon discord">
+										<span class="fa fa-discord"></span>
+									</span>
+									<span class="sr-only">FifaRosters Discord</span>
+								</a>
+							</li>
+						</ul>
+						<br>
+						<ul>
+    						<li>
+    						    <a href="https://fifarosters.com/direct-sales.html" target="_blank">Advertise on FifaRosters</a>
+    						</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+
+        <footer>
+			<section class="container">
+				<div class="row">
+    				<div class="col-xs-12 col-sm-6">
+						<div class="d-inline-block" style="margin-right: 30px;">
+            				<a href="index.html" class="logo-text"><span class="icn-chem-fifarosters" style="margin-right: 16px; font-size: 17px;"></span>FifaRosters</a>
+						</div>
+						<br class="visible-xs-block">
+						<div class="d-inline-block margin-right-lg">
+    						<a href="newuser7091.html?url=/nologintool.php">Sign Up</a>
+						</div>
+						<div class="d-inline-block margin-right-lg">
+            				<a href="contact.html">Contact Us</a>
+						</div>
+						<div class="d-inline-block margin-right-lg">
+            				<a href="privacy.html">Privacy Policy</a>
+						</div>
+						<div class="d-inline-block margin-right-lg">
+            				<a href="faq.html">FAQs</a>
+						</div>
+						                            <div id="translate-tab" class="d-inline-block" style="font-size: 16px;">
+    						    <a href="javascript:void(0);" data-toggle="collapse" data-target="#translateForm" aria-expanded="false" aria-controls="translateForm" class="collapsed" aria-label="Translate this page">
+        						    <span class="icn-chem-translate"></span>
+    						    </a>
+                                <div class="collapse" id="translateForm">
+                            		<div id="google_translate_element"></div>
+                                </div>
+    						</div>
+                            				</div>
+					<div class="col-xs-12 col-sm-6 text-right xs-text-left">
+												<br class="visible-xs-block">
+						<div class="d-inline-block padding-right">
+						    <strong>Database Version</strong>
+                        </div>
+                        <div class="d-inline-block padding-right">
+                            FIFA 2019-09-20                        </div>
+                        <div class="d-inline-block padding-right">
+                            FUT 2024-07-10                        </div>
+					</div>
+				</div>
+			</section>
+        </footer>
+		
+			<script src="js/autocomplete-fut-images.js"></script>
+	<script src="js/autocomplete-team-player.js"></script>
+		<script type="text/javascript">
+    		var deferred_css = [
+                "//fonts.googleapis.com/css?family=Exo+2:600italic",
+                "bower_components/chosen/chosen.css",
+                "css/card-mini.css",
+                "css/autocomplete6674.css?v=2022-03-25",
+                "bower_components/animate.css/animate.min.css"
+            ];
+		
+            deferred_css.forEach(function(css) {
+                var css1 = document.createElement('link');
+                css1.rel = 'stylesheet';
+                css1.href = css;
+                css1.type = 'text/css';
+                var godefer = document.getElementsByTagName('link')[0];
+                godefer.parentNode.insertBefore(css1, godefer.nextSibling);
+            });
+        </script>
+
+				
+				
+				<script>window.twttr = (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {}; if (d.getElementById(id)) { return t; } js = d.createElement(s); js.id = id; js.src = "../platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.push(f); }; return t; }(document, "script", "twitter-wjs"));</script>
+		
+	</body>
+
+<!-- Mirrored from www.fifarosters.com/nologintool.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 Jul 2024 14:53:54 GMT -->
+</html>
