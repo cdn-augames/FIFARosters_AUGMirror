@@ -6,3 +6,6 @@ The whole point of this repo is to provide a way to access the website disregard
 
 # Security Issues
 This repo in no way modifies any of the data collected by FIFA Rosters, if anything it should still send it to them. I am unsure on if the login function will still work as the server used by FIFA Rosters was also cloned while grabbing the source. None of the login data, form data or any other data is sent to me at all.
+
+# Extra features
+As of right now, I have no plans to include any extra features ontop of the source code and slight QOL features (such as removing ads) in this repo.
