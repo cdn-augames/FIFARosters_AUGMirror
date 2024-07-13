@@ -9,3 +9,6 @@ This repo in no way modifies any of the data collected by FIFA Rosters, if anyth
 
 # Extra features
 As of right now, I have no plans to include any extra features ontop of the source code and slight QOL features (such as removing ads) in this repo.
+
+# How much is done?
+As of right now, only around 20%, maybe 25%, has been grabbed by HTTrack. This project is already over 25gb in size and I had to remove a lot of crucial things in order to get it onto github. Progress will not be made until I can find a better solution for storing all the files.
